@@ -1,6 +1,7 @@
+import java.util.ArrayList;
 public class Pedido {
 
-
+    ArrayList<Produto> produtos;
     private Cliente cliente;
     private Produto produto;
 
@@ -21,6 +22,21 @@ public class Pedido {
     public void setProduto(Produto produto) {
          this.produto = produto;
     }
+
+    public void AdicionarProduto(Produto produto){
+        produtos.add(produto);
+    }
+
+    public void RemoverProduto(Produto produto){
+        produtos.remove(produto);
+    }
+
+    public void percorrerProduto(){
+         for(int i = 0; i < produtos.size(); i++){
+             produto = produtos.get(i);
+         }
+    }
+
 
     public void CalcularCréditoImovel(Produto produto){
             if(produto.getPreco() > cliente.getCredito()){
