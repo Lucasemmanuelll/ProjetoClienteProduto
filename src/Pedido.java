@@ -38,7 +38,7 @@ public class Pedido {
     }
 
 
-    public void CalcularCréditoImovel(Produto produto){
+    public void CalcularCredito(Produto produto){
             if(produto.getPreco() > cliente.getCredito()){
                 throw new IllegalArgumentException(
                         "Crédito menor que " + getProduto()
