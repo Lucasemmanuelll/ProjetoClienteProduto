@@ -22,8 +22,14 @@ public class Pedido {
          this.produto = produto;
     }
 
-    public void CategoriaCliente() {
-        System.out.println("Categoria Cliente" + this.);
+    public void ExibirProduto(){
+        System.out.println("Nome: " + this.produto.getNome());
+        System.out.println("Preço: " + this.produto.getPreco());
+        System.out.println("Categoria: " + this.produto.getCategoria());
+    }
+
+    public void ExibirPedido() {
+        System.out.println("Categoria Cliente" + this.produto.getCategoria());
         System.out.println("Nome: " + this.cliente.getNome());
         System.out.println("Cidade: " + this.cliente.getCidade());
     }
