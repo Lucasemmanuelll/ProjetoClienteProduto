@@ -16,8 +16,8 @@ public class Pedido {
     public void setCliente(Cliente cliente) {
          this.cliente = cliente;
     }
-    public String getProduto() {
-         return produto;
+    public ArrayList<Produto> getProdutos() {
+         return produtos;
     }
     public void setProduto(Produto produto) {
          this.produto = produto;
