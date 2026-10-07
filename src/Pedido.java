@@ -22,6 +22,17 @@ public class Pedido {
          this.produto = produto;
     }
 
+    public void CalcularCréditoImovel(Produto produto){
+            if(produto.getPreco() > cliente.getCredito()){
+                throw new IllegalArgumentException(
+                        "Crédito menor que " + getProduto()
+                );
+            }else{
+
+            }
+
+    }
+
     public void ExibirProduto(){
         System.out.println("Nome: " + this.produto.getNome());
         System.out.println("Preço: " + this.produto.getPreco());
