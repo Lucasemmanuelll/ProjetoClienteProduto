@@ -3,14 +3,15 @@
 void main() {
 
 
-    Map<Integer, Produto > produtos = new HashMap<>();
-    produtos.put(1,new Produto("Macbook", 2.000,"Eletrônico"));
-    produtos.put(2, new Produto("Mouse", 80.00, "Acessório"));
-    produtos.put(3,new Produto("Tv Samsung", 3.000, "Casa-Eletrônico"));
-
-    System.out.println(produtos.get(1).getNome());
-    System.out.println(produtos.size());
-    System.out.println(produtos.containsKey(2));
+    Map<Integer, Produto > produtos = new HashMap<>();//Map, mapeamento de lista de produtos (Associação de chaves e valor: As chaves são únicas e os valores podem se repetir)
+    produtos.put(101,new Produto("Macbook", 2.000,"Eletrônico"));// o metodo .put serve para adicionar ou atualizar um par de chave e valor dentro de um map
+    produtos.put(102, new Produto("Mouse", 80.00, "Acessório"));
+    produtos.put(103,new Produto("Tv Samsung", 3.000, "Casa-Eletrônico"));
+    System.out.println(produtos.get(102));//.getNome é o metodo acessor para ler ou recuperar o valor de um atributo( no caso, o getNome)
+    System.out.println(produtos.get(102).getNome());
+    System.out.println(produtos.get(102).getPreco());
+    System.out.println(produtos.containsKey(104));//.containsKey serve para verificar se a chave específica dentro do map é existente
+    System.out.println(produtos.size());//. size serve para retornar a quantidade total de chaves valor dentro do map
 
     Cliente cliente = new Cliente("Lucas","São Vicente",12.000);
     Pedido produto = new Pedido(cliente);
