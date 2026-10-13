@@ -16,6 +16,9 @@ void main() {
     produtos.values(102);//Obtém: coleção dos valores
     produtos.entrySet();//Obtém: conjunto das entradas, cada um com chave e valor
 
+for(Map.Entry<Integer, Produto> entry : produtos.entrySet()){
+        System.out.println(entry.getKey());
+    }
     Cliente cliente = new Cliente("Lucas","São Vicente",12.000);
     Pedido produto = new Pedido(cliente);
     Pedido  = new Pedido(produto);
