@@ -12,6 +12,9 @@ void main() {
     System.out.println(produtos.get(102).getPreco());
     System.out.println(produtos.containsKey(104));//.containsKey serve para verificar se a chave específica dentro do map é existente
     System.out.println(produtos.size());//. size serve para retornar a quantidade total de chaves valor dentro do map
+    produtos.keySet();//Obtém: conjunto das chaves
+    produtos.values(102);//Obtém: coleção dos valores
+    produtos.entrySet();//Obtém: conjunto das entradas, cada um com chave e valor
 
     Cliente cliente = new Cliente("Lucas","São Vicente",12.000);
     Pedido produto = new Pedido(cliente);
